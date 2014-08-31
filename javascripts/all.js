@@ -1,0 +1,1 @@
+function root(a){var o=a.num.value;a.ans.value=Math.floor(1e4*o*.00491)}
