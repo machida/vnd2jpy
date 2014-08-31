@@ -4,12 +4,15 @@ title: vnd2jpy
 
 .calculate
   .wrapper.calculate__wrapper
-    h1.calculate__title.is-ja 何万ドン？
     form.calculate__form
+      h1.calculate__title.is-ja 何万ドン？
       .calculate__input-wrapper
         = image_tag("dong.png", class: "calculate__image")
         input.calculate__input.is-dong.is-en name="num" onchange="root(this.form)" type="number" autofocus=""
         span.calculate__unit 万ドン
+      .calculate__arrow-wrapper
+        i.fa.fa-long-arrow-down.calculate__arrow
+      h1.calculate__title.is-ja 何円？
       .calculate__input-wrapper
         = image_tag("yen.png", class: "calculate__image")
         input.calculate__input.is-jpy.is-en name="ans" type="number"
