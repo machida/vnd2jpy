@@ -1,0 +1,13 @@
+body
+  overflow-x: hidden
+  width: 100%
+  +transition(.2s)
+  background-color: $base-color
+.header
+  +box-sizing(border-box)
+  +rem('height', 50px)
+  background-color: $main-color
+  +rem('margin-bottom', 24px)
+.header__title
+  +text-block(18px, 50px, false, center, $base-color)
+  +main-bold-font

@@ -1,0 +1,25 @@
+.calculate__title
+  +text-block(22px, 50px, 16px, center, $text-color)
+  +main-bold-font
+.calculate__input-wrapper
+  +relative
+  +rem('padding-right', 60px)
+  +rem('margin-bottom', 16px)
+.calculate__image
+  +rem('height', 24px)
+  +border(all, 1px, solid, $text-color)
+  +box-sizing(border-box)
+  +absolute(left, 8px, top, 8px)
+.calculate__input
+  +border(all, 2px, solid, $text-color)
+  width: 100%
+  +box-sizing(border-box)
+  +rem('padding', 8px 8px 8px 50px)
+  +text-block(18px, 18px, false, $text-color)
+  +main-bold-font
+.calculate__unit
+  +absolute(right, 0, top, 0)
+  +text-block(16px, 40px, false, left)
+  +rem('width', 60px)
+  +rem('padding-left', 8px)
+  +box-sizing(border-box)
